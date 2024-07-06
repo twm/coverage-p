@@ -28,8 +28,9 @@ The `coverage_pth package <https://pypi.org/project/coverage_pth/>`__ attempts t
 but the wheels it provides only work on Python 3.6.
 It also `appears unmaintained <https://github.com/dougn/coverage_pth/commits/master/>`__.
 
-.. |gha| image:: https://github.com/twm/coveragepth/actions/workflows/ci.yaml/badge.svg
+.. |ci| image:: https://github.com/twm/coveragepth/actions/workflows/ci.yml/badge.svg
     :alt: CI
+    :target: https://github.com/twm/coveragepth/actions/workflows/ci.yml
 
 .. |pypi| image:: https://img.shields.io/pypi/v/coveragepth.svg
     :alt: PyPI
