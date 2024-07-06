@@ -1,8 +1,9 @@
-coverage.pth
-============
+coveragepth
+===========
 
-|ci|
 |pypi|
+|calver|
+|ci|
 
 This package contains a ``.pth`` file that calls ``coverage.process_startup()``.
 
@@ -11,7 +12,7 @@ Usage
 
 Install it with Pip::
 
-    pip install coverage.pth
+    pip install coveragepth
 
 Then run your tests like::
 
@@ -27,8 +28,14 @@ The `coverage_pth package <https://pypi.org/project/coverage_pth/>`__ attempts t
 but the wheels it provides only work on Python 3.6.
 It also `appears unmaintained <https://github.com/dougn/coverage_pth/commits/master/>`__.
 
-.. |gha| image:: https://github.com/twm/coverage.pth/actions/workflows/ci.yaml/badge.svg
-.. _gha: https://github.com/twm/coverage.pthincremental/actions/workflows/ci.yaml
+.. |gha| image:: https://github.com/twm/coveragepth/actions/workflows/ci.yaml/badge.svg
+    :alt: CI
 
-.. |pypi| image:: http://img.shields.io/pypi/v/coverage.pth.svg
-.. _pypi: https://pypi.python.org/pypi/coverage.pth
+.. |pypi| image:: https://img.shields.io/pypi/v/coveragepth.svg
+    :alt: PyPI
+    :target: https://pypi.org/project/coveragepth/
+
+.. |calver| image:: https://img.shields.io/badge/calver-YY.MM.MICRO-22bfda.svg
+    :alt: calver: YY.MM.MICRO
+    :target: https://calver.org/
+
