@@ -1,3 +1,8 @@
+"""
+Installing `coverage.pth` causes `coverage.process_startup()` to be called
+when Python starts.
+"""
+
 from subprocess import run
 from pathlib import Path
 import venv
@@ -15,6 +20,12 @@ run([pip, "install", str(wheel_file)], check=True)
 python = str(venv_dir / "bin" / "python")
 script = """\
 import sys
-sys.exit("coverage" not in sys.modules)
+if "coverage" not in sys.modules:
+    print("coverage hasn't been imported")
+    sys.exit(1)
+import coverage
+if not hasattr(coverage.process_startup, "coverage"):
+    print("coverage.process_startup() wasn't called (or the implementation changed)")
+    sys.exit(1)
 """
 run([python, "-c", script], check=True)
