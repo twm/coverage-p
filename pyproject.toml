@@ -3,7 +3,7 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "coverage.pth"
+name = "coveragepth"
 version = "24.7.0"
 description = "A .pth file that calls coverage.process_startup()"
 readme = "README.rst"
