@@ -3,6 +3,7 @@ Installing `coverage.pth` causes `coverage.process_startup()` to be called
 when Python starts.
 """
 
+import os
 from subprocess import run
 from pathlib import Path
 import venv
@@ -27,5 +28,10 @@ import coverage
 if not hasattr(coverage.process_startup, "coverage"):
     print("coverage.process_startup() wasn't called (or the implementation changed)")
     sys.exit(1)
+print("OK!")
 """
-run([python, "-c", script], check=True)
+run(
+    [python, "-c", script],
+    env={**os.environ, "COVERAGE_PROCESS_START": "/dev/null"},
+    check=True,
+)
