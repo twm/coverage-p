@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "coveragepth"
-version = "24.7.0rc1"
+version = "24.7.0"
 description = "A .pth file that calls coverage.process_startup()"
 readme = "README.rst"
 authors = [
@@ -16,7 +16,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
 ]
-license = {file = "LICENSE"}
 dependencies = [
     "coverage",
 ]
