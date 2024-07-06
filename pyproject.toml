@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "coveragepth"
-version = "24.7.0"
+version = "24.7.0rc1"
 description = "A .pth file that calls coverage.process_startup()"
 readme = "README.rst"
 authors = [

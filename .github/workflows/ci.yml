@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [main]
+    tags: ["coveragepth-*"]
   pull_request:
     branches: [main]
 
@@ -27,7 +28,7 @@ jobs:
         cache: 'pip'
 
     - name: Install dependencies
-      run: pip install wheel
+      run: pip install wheel twine
 
     - name: Build
       run: python build.py
@@ -35,3 +36,9 @@ jobs:
     - name: Test
       run: python test.py
 
+    - run: twine check dist/*.*
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: dist-${{ matrix.python-version }}
+        path: dist/*.whl
