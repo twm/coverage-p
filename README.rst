@@ -31,7 +31,7 @@ Install it with Pip::
 
 Then run your tests like::
 
-    $ coverage run -p -m unittest ...
+    $ COVERAGE_PROCESS_START="$PWD/.coveragerc" coverage run -p -m unittest ...
 
 See the Coverage.py document `Measuring sub-processes <https://coverage.readthedocs.io/en/latest/subprocess.html>`__ for more information.
 
