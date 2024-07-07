@@ -1,13 +1,13 @@
-coveragepth
-===========
+coverage-proc
+=============
 
-.. |ci| image:: https://github.com/twm/coveragepth/actions/workflows/ci.yml/badge.svg
+.. |ci| image:: https://github.com/twm/coverage-proc/actions/workflows/ci.yml/badge.svg
     :alt: CI
-    :target: https://github.com/twm/coveragepth/actions/workflows/ci.yml
+    :target: https://github.com/twm/coverage-proc/actions/workflows/ci.yml
 
-.. |pypi| image:: https://img.shields.io/pypi/v/coveragepth.svg
+.. |pypi| image:: https://img.shields.io/pypi/v/coverage-proc.svg
     :alt: PyPI
-    :target: https://pypi.org/project/coveragepth/
+    :target: https://pypi.org/project/coverage-proc/
 
 .. |calver| image:: https://img.shields.io/badge/calver-YY.MM.MICRO-22bfda.svg
     :alt: calver: YY.MM.MICRO
@@ -27,7 +27,7 @@ Usage
 
 Install it with Pip::
 
-    $ pip install coveragepth
+    $ pip install coverage-proc
 
 Then run your tests like::
 
@@ -56,7 +56,7 @@ v24.7.0 (2024-07-06)
 Contributing
 ------------
 
-File issues and PRs `on GitHub <https://github.com/twm/coveragepth/issues>`__.
+File issues and PRs `on GitHub <https://github.com/twm/coverage-proc/issues>`__.
 See `CONTRIBUTING.rst <./CONTRIBUTING.rst>`__ for more.
 Please follow the `Twisted code of conduct <https://github.com/twisted/.github/blob/trunk/code_of_conduct.md>`__.
 
@@ -64,4 +64,4 @@ Please follow the `Twisted code of conduct <https://github.com/twisted/.github/b
 License
 -------
 
-coveragepth is made available under the `MIT license <./LICENSE>`__.
+coverage-proc is made available under the `MIT license <./LICENSE>`__.
