@@ -3,7 +3,7 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "coverage-proc"
+name = "coverage-p"
 version = "24.7.0"
 description = "A .pth file that calls coverage.process_startup()"
 readme = "README.rst"
@@ -21,8 +21,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/twm/coverage-proc"
-Issues = "https://github.com/twm/coverage-proc/issues"
+Homepage = "https://github.com/twm/coverage-p"
+Issues = "https://github.com/twm/coverage-p/issues"
 
 [tool.setuptools]
 packages = []

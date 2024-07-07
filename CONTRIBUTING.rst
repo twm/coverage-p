@@ -15,4 +15,4 @@ Release process
 
 2. PR and merge
 
-2. Create a tag of the form ``coverage-proc-YY.MM.MICRO`` and push it to GitHub
+2. Create a tag of the form ``coverage-p-YY.MM.MICRO`` and push it to GitHub
