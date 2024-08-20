@@ -1,10 +1,6 @@
 coverage-p
 =============
 
-.. |ci| image:: https://github.com/twm/coverage-p/actions/workflows/ci.yml/badge.svg
-    :alt: CI
-    :target: https://github.com/twm/coverage-p/actions/workflows/ci.yml
-
 .. |pypi| image:: https://img.shields.io/pypi/v/coverage-p.svg
     :alt: PyPI
     :target: https://pypi.org/project/coverage-p/
@@ -12,6 +8,10 @@ coverage-p
 .. |calver| image:: https://img.shields.io/badge/calver-YY.MM.MICRO-22bfda.svg
     :alt: calver: YY.MM.MICRO
     :target: https://calver.org/
+
+.. |ci| image:: https://github.com/twm/coverage-p/actions/workflows/ci.yml/badge.svg
+    :alt: CI
+    :target: https://github.com/twm/coverage-p/actions/workflows/ci.yml
 
 
 |pypi|
@@ -33,8 +33,15 @@ Then run your tests like::
 
     $ COVERAGE_PROCESS_START="$PWD/.coveragerc" coverage run -p -m unittest ...
 
+Each Python processes your tests spawn will generate a ``.coverage`` file.
+Merge these by running ``coverage combine``.
+
 See the Coverage.py document `Measuring sub-processes <https://coverage.readthedocs.io/en/latest/subprocess.html>`__ for more information.
 
+.. note::
+
+   ``coverage.process_startup()`` is a no-op unless the ``COVERAGE_PROCESS_START`` environment variable is set.
+   The ``coverage run`` command does *not* set this variable!
 
 Why not ``coverage_pth``?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
