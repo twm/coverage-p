@@ -23,7 +23,7 @@ jobs:
         cache: 'pip'
 
     - name: Install dependencies
-      run: pip install wheel twine
+      run: pip install -r requirements_build.txt
 
     - name: Build
       run: python build.py
