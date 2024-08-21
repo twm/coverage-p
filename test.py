@@ -16,7 +16,7 @@ venv_dir = root / "venv"
 venv.create(str(venv_dir), clear=True, with_pip=True, symlinks=True)
 
 pip = str(venv_dir / "bin" / "pip")
-run([pip, "install", str(wheel_file)], check=True)
+run([pip, "install", "-r", "requirements_test.txt", str(wheel_file)], check=True)
 
 python = str(venv_dir / "bin" / "python")
 script = """\
