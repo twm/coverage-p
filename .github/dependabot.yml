@@ -1,0 +1,22 @@
+version: 2
+updates:
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+    groups:
+      # Group together build dependencies. This is everything coverage..
+      #
+      # Dependabot doesn't let us differentiate between
+      # requirements_build.txt and requirements_test.txt without putting
+      # them in different directories.
+      build:
+        exclude-patterns: "coverage"
