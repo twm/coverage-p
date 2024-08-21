@@ -13,7 +13,7 @@ updates:
       interval: "weekly"
       day: "friday"
     groups:
-      # Group together build dependencies. This is everything coverage..
+      # Group together build dependencies. This is everything but coverage.
       #
       # Dependabot doesn't let us differentiate between
       # requirements_build.txt and requirements_test.txt without putting
