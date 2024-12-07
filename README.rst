@@ -50,6 +50,14 @@ The `coverage_pth package <https://pypi.org/project/coverage_pth/>`__ attempts t
 but the wheels it provides only work on Python 3.6.
 It also `appears unmaintained <https://github.com/dougn/coverage_pth/commits/master/>`__.
 
+Compatiblity Policy
+-------------------
+
+Any version of CPython `supported upstream <https://devguide.python.org/versions/>`_ and by Coverage.py is considered supported and should be tested in CI.
+Additionally, CI covers supported 3.x releases of `PyPy <https://pypy.org/>`_, subject to availability in GitHub Actions.
+
+coverage-p is tested against the current version of Coverage.py.
+The API coverage-p invokes has been stable for many years, so compatibility issues are not expected.
 
 Changelog
 ---------
