@@ -13,6 +13,10 @@ updates:
       interval: "weekly"
       day: "friday"
     groups:
+      coverage:
+        patterns:
+          - "coverage"
+
       # Group together build dependencies. This is everything but coverage.
       #
       # Dependabot doesn't let us differentiate between
