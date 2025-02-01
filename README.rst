@@ -62,6 +62,12 @@ The API coverage-p invokes has been stable for many years, so compatibility issu
 Changelog
 ---------
 
+v25.2.0 (2025-02-01)
+~~~~~~~~~~~~~~~~~~~~
+
+- Add License-Expression metadata
+- Repackage with Hatchling
+
 v24.7.0 (2024-07-06)
 ~~~~~~~~~~~~~~~~~~~~
 
