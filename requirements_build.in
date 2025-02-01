@@ -1,2 +1,4 @@
-wheel
+build
+hatchling
 twine
+wheel
