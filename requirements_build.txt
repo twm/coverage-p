@@ -78,7 +78,7 @@ secretstorage==3.3.3
     # via keyring
 trove-classifiers==2025.1.15.22
     # via hatchling
-twine==6.1.0
+twine==6.2.0
     # via -r requirements_build.in
 urllib3==2.3.0
     # via
