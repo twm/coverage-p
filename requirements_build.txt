@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements_build.txt requirements_build.in
 #
-build==1.3.0
+build==1.4.0
     # via -r requirements_build.in
 certifi==2025.1.31
     # via requests
@@ -16,7 +16,7 @@ cryptography==44.0.0
     # via secretstorage
 docutils==0.21.2
     # via readme-renderer
-hatchling==1.27.0
+hatchling==1.28.0
     # via -r requirements_build.in
 id==1.5.0
     # via twine
