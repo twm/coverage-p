@@ -16,7 +16,7 @@ cryptography==44.0.0
     # via secretstorage
 docutils==0.21.2
     # via readme-renderer
-hatchling==1.28.0
+hatchling==1.29.0
     # via -r requirements_build.in
 id==1.5.0
     # via twine
@@ -49,6 +49,7 @@ packaging==24.2
     #   build
     #   hatchling
     #   twine
+    #   wheel
 pathspec==0.12.1
     # via hatchling
 pluggy==1.5.0
@@ -84,5 +85,5 @@ urllib3==2.3.0
     # via
     #   requests
     #   twine
-wheel==0.45.1
+wheel==0.46.3
     # via -r requirements_build.in
