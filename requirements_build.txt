@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements_build.txt requirements_build.in
 #
-build==1.4.2
+build==1.4.3
     # via -r requirements_build.in
 certifi==2025.1.31
     # via requests
